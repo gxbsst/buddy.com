@@ -1,0 +1,29 @@
+nl:
+  refinery:
+    plugins:
+      shares:
+        title: Shares
+    shares:
+      admin:
+        shares:
+          actions:
+            create_new: Maak een nieuwe Share
+            reorder: Wijzig de volgorde van de Shares
+            reorder_done: Klaar met het wijzingen van de volgorde van de Shares
+          records:
+            title: Shares
+            sorry_no_results: Helaas! Er zijn geen resultaten gevonden.
+            no_items_yet: Er zijn nog geen Shares. Druk op 'Maak een nieuwe Share' om de eerste aan te maken.
+          share:
+            view_live_html: Bekijk deze share op de website <br/><em>(opent een nieuw venster)</em>
+            edit: Bewerk deze share
+            delete: Verwijder deze share voor eeuwig
+      shares:
+        show:
+          other: Andere Shares
+  activerecord:
+    attributes:
+      'refinery/shares/share':
+        people_name: People Name
+        time: Time
+        content: Content

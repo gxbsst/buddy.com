@@ -5,6 +5,14 @@ gem 'rails', '3.2.5'
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
+gem 'mysql2'
+
+
+
+
+
+
+
 group :development, :test do
   gem 'sqlite3'
 end
@@ -48,3 +56,7 @@ gem 'refinerycms-i18n', '~> 2.0.0'
 #  gem 'refinerycms-inquiries', '~> 2.0.0'
 #  gem 'refinerycms-search', '~> 2.0.0'
 #  gem 'refinerycms-page-images', '~> 2.0.0'
+
+gem 'refinerycms-events', :path => 'vendor/extensions'
+gem 'refinerycms-shares', :path => 'vendor/extensions'
+gem 'refinerycms-interviews', :path => 'vendor/extensions'

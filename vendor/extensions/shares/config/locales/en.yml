@@ -1,0 +1,29 @@
+en:
+  refinery:
+    plugins:
+      shares:
+        title: Shares
+    shares:
+      admin:
+        shares:
+          actions:
+            create_new: Add New Share
+            reorder: Reorder Shares
+            reorder_done: Done Reordering Shares
+          records:
+            title: Shares
+            sorry_no_results: Sorry! There are no results found.
+            no_items_yet: There are no Shares yet. Click "Add New Share" to add your first share.
+          share:
+            view_live_html: View this share live <br/><em>(opens in a new window)</em>
+            edit: Edit this share
+            delete: Remove this share forever
+      shares:
+        show:
+          other: Other Shares
+  activerecord:
+    attributes:
+      'refinery/shares/share':
+        people_name: People Name
+        time: Time
+        content: Content

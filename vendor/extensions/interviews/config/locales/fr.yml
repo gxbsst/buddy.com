@@ -1,0 +1,31 @@
+fr:
+  refinery:
+    plugins:
+      interviews:
+        title: Interviews
+    interviews:
+      admin:
+        interviews:
+          actions:
+            create_new: Créer un(e) nouve(au/l/lle) Interview
+            reorder: Réordonner les Interviews
+            reorder_done: Fin de réordonnancement des Interviews
+          records:
+            title: Interviews
+            sorry_no_results: "Désolé ! Aucun résultat."
+            no_items_yet: 'Il n''y a actuellement aucun(e) Interview. Cliquer sur "Créer un(e) nouve(au/l/lle) Interview" pour créer votre premi(er/ère) interview.'
+          interview:
+            view_live_html: Voir ce(t/tte) interview <br/><em>(Ouvre une nouvelle fenêtre)</em>
+            edit: Modifier ce(t/tte) interview
+            delete: Supprimer définitivement ce(t/tte) interview
+      interviews:
+        show:
+          other: Autres Interviews
+  activerecord:
+    attributes:
+      'refinery/interviews/interview':
+        people_name: People Name
+        title: Title
+        time: Time
+        content: Content
+        photo: Photo

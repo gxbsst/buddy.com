@@ -1,0 +1,73 @@
+
+<div class="top">
+<div class="top_con">
+<div class="logo"><img src="images/logo.gif" width="102" height="111" /></div>
+<div class="menu">
+<ul class="m1">
+<li><a href="/homes">首 页</a></li>
+<li><a href="origin.html" >起 源</a></li>
+<li><a href="/events">活 动</a></li>
+<li><a href="particopate.html">参 与</a></li> 
+<li><a href="/shares">分 享</a></li>
+</ul>
+</div>
+</div>
+</div>
+
+<div class="content">
+<div class="prompt">
+  <div class="pro_con">您现在的位置：<a href="/homes">首页</a> > <span>分享</span></div></div>
+
+<div class="subpage_con">
+<div class="subc_top"></div>
+
+<div class="subc_center">
+<div class="sc_title4">分享——从心分享，一起见证改变的力量！</div>
+<div class="act_title">
+  <div class="at_left">活动感言</div>
+</div>
+
+
+<ul class="reflections_list">
+<li>
+	<% @shares.each do |share| %>
+		<div class="sl_title"><span class="slt_1"><%= share.people_name %></span><span>说</span><span class="slt_2">时间：<%= share.time %></span></div>
+		<div class="sl_con"><span class="slc_1">
+		  <%#= image_tag(share.photo(:large).url()) %>
+
+			<%= image_fu(share.photo, "70x70") %></span><span class="slc_2"><%= share.content.html_safe %></span></div>
+	<% end %>
+</li>
+</ul>
+
+
+<div class="line"></div>
+
+<div class="act_title">
+  <div class="at_left">讲述专访</div>
+<div class="more_wonderful"><a href="/interviews">更多讲述>></a></div>
+</div>
+<div class="talk_con">
+
+
+	<% @interviews.each do |interview| %>
+		<div class="tc_img"><%= image_fu(interview.photo, "170x195px") %></div>
+		<div class="tc_text">
+		<span class="tct_title"><a href="sharecontent.html"><%= interview.people_name %>、<%= interview.title %></a></span>
+		<span class="tct_date">时间：<%= interview.time %> </span>
+		<span><%= interview.content.html_safe %><br />
+		</span>
+		</div>
+
+		</div>
+		</div>
+    <% end %>
+
+
+<div class="subc_bottom"></div>
+
+</div>
+
+</div>
+
+ 

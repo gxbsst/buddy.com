@@ -1,0 +1,87 @@
+<div class="top">
+<div class="top_con">
+<div class="logo"><img src="images/logo.gif" width="102" height="111" /></div>
+<div class="menu">
+<ul class="m1">
+<li><a href="/homes">首 页</a></li>
+<li><a href="origin.html">起 源</a></li>
+<li><a href="/events">活 动</a></li>
+<li><a href="particopate.html">参 与</a></li> 
+<li><a href="/shares">分 享</a></li>
+</ul>
+</div>
+</div>
+</div>
+
+<div class="content">
+
+<div class="prompt"><div class="pro_con">您现在的位置：<a href="/homes">首页</a> > <span>活动</span></div></div>
+
+<div class="subpage_con">
+<div class="subc_top"></div>
+
+<div class="subc_center">
+<div class="sc_title2">活动——我们努力让每一次活动都发挥最大的效能。</div>
+<div class="act_title">
+<div class="at_left">活动预告</div>
+<div class="at_right"><img src="images/act_pic3.gif" width="450" height="15" /></div>
+</div>
+
+	<% @events.each do |event| %>
+	    <div class="scc_top">
+	    <div class="act_img"><%= image_fu(event.photo, "320x230px") %></div>
+	    <dl class="act_text">
+		<dt><%= event.title %></dt>
+		<dd>时间：<%= event.begin_at %></dd>
+		<dd>地点：<%= event.address %></dd>
+		<dd>类别：<%= event.category %></dd>
+		<dd>内容：<span class="st_3"><%= event.content.html_safe %></span><a href="/events">［查看详情］</a></dd>
+    <% end %>
+
+
+<dd class="att_btn"><a href="particopate.html"><img src="images/act_pic5.gif" width="142" height="39" border="0" /></a></dd>
+</dl>
+</div>
+<div class="line"></div>
+<div class="act_title">
+  <div class="at_left">精彩回顾</div>
+<div class="more_wonderful"><a href="＃">更多精彩活动 >></a></div>
+</div>
+
+
+<ul class="act_review">
+<li>
+<span class="ar_img"><img src="images/act_pic7.gif" width="190" height="140" /></span>
+<span class="ar_title"><a href="＃">聆听“421”家庭结构变迁声音</a></span>
+<span class="ar_share"><img src="images/act_pic12.gif" width="71" height="12" /></span>
+</li>
+<li>
+<span class="ar_img"><img src="images/act_pic8.gif" width="190" height="140" /></span>
+<span class="ar_title"><a href="＃">旅游日公益陪伴助老活动</a></span>
+<span class="ar_share"><img src="images/act_pic12.gif" width="71" height="12" /></span>
+</li>
+<li>
+<span class="ar_img"><img src="images/act_pic9.gif" width="190" height="140" /></span>
+<span class="ar_title"><a href="＃">世界卫生日“清爽助洁”活动</a></span>
+<span class="ar_share"><img src="images/act_pic12.gif" width="71" height="12" /></span>
+</li>
+<li>
+<span class="ar_img"><img src="images/act_pic10.gif" width="190" height="140" /></span>
+<span class="ar_title"><a href="＃">石库门里地舞会</a></span>
+<span class="ar_share"><img src="images/act_pic12.gif" width="71" height="12" /></span>
+</li>
+</ul>
+
+
+
+
+</div>
+
+
+
+<div class="subc_bottom"></div>
+
+</div>
+
+</div>
+

@@ -1,0 +1,29 @@
+fr:
+  refinery:
+    plugins:
+      shares:
+        title: Shares
+    shares:
+      admin:
+        shares:
+          actions:
+            create_new: Créer un(e) nouve(au/l/lle) Share
+            reorder: Réordonner les Shares
+            reorder_done: Fin de réordonnancement des Shares
+          records:
+            title: Shares
+            sorry_no_results: "Désolé ! Aucun résultat."
+            no_items_yet: 'Il n''y a actuellement aucun(e) Share. Cliquer sur "Créer un(e) nouve(au/l/lle) Share" pour créer votre premi(er/ère) share.'
+          share:
+            view_live_html: Voir ce(t/tte) share <br/><em>(Ouvre une nouvelle fenêtre)</em>
+            edit: Modifier ce(t/tte) share
+            delete: Supprimer définitivement ce(t/tte) share
+      shares:
+        show:
+          other: Autres Shares
+  activerecord:
+    attributes:
+      'refinery/shares/share':
+        people_name: People Name
+        time: Time
+        content: Content

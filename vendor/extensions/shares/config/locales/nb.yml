@@ -1,0 +1,29 @@
+nb:
+  refinery:
+    plugins:
+      shares:
+        title: Shares
+    shares:
+      admin:
+        shares:
+          actions:
+            create_new: Lag en ny Share
+            reorder: Endre rekkefølgen på Shares
+            reorder_done: Ferdig å endre rekkefølgen Shares
+          records:
+            title: Shares
+            sorry_no_results: Beklager! Vi fant ikke noen resultater.
+            no_items_yet: Det er ingen Shares enda. Klikk på "Lag en ny Share" for å legge til din første share.
+          share:
+            view_live_html: Vis hvordan denne share ser ut offentlig <br/><em>(åpner i et nytt vindu)</em>
+            edit: Rediger denne share
+            delete: Fjern denne share permanent
+      shares:
+        show:
+          other: Andre Shares
+  activerecord:
+    attributes:
+      'refinery/shares/share':
+        people_name: People Name
+        time: Time
+        content: Content

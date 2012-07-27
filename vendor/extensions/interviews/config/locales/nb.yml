@@ -1,0 +1,31 @@
+nb:
+  refinery:
+    plugins:
+      interviews:
+        title: Interviews
+    interviews:
+      admin:
+        interviews:
+          actions:
+            create_new: Lag en ny Interview
+            reorder: Endre rekkefølgen på Interviews
+            reorder_done: Ferdig å endre rekkefølgen Interviews
+          records:
+            title: Interviews
+            sorry_no_results: Beklager! Vi fant ikke noen resultater.
+            no_items_yet: Det er ingen Interviews enda. Klikk på "Lag en ny Interview" for å legge til din første interview.
+          interview:
+            view_live_html: Vis hvordan denne interview ser ut offentlig <br/><em>(åpner i et nytt vindu)</em>
+            edit: Rediger denne interview
+            delete: Fjern denne interview permanent
+      interviews:
+        show:
+          other: Andre Interviews
+  activerecord:
+    attributes:
+      'refinery/interviews/interview':
+        people_name: People Name
+        title: Title
+        time: Time
+        content: Content
+        photo: Photo

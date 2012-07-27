@@ -1,0 +1,39 @@
+<% content_for :body_content_title do %>
+  <%= @share.people_name %>
+<% end %>
+
+<% content_for :body do %>
+  <section>
+    <h1>People Name</h1>
+    <p>
+      <%=raw @share.people_name %>
+    </p>
+  </section>
+  <section>
+    <h1>Time</h1>
+    <p>
+      <%=raw @share.time %>
+    </p>
+  </section>
+  <section>
+    <h1>Content</h1>
+    <p>
+      <%=raw @share.content %>
+    </p>
+  </section>
+<% end %>
+
+<% content_for :side_body do %>
+  <aside>
+    <h2><%= t('.other') %></h2>
+    <ul id="shares">
+      <% @shares.each do |share| %>
+        <li>
+          <%= link_to share.people_name, refinery.shares_share_path(share) %>
+        </li>
+      <% end %>
+    </ul>
+  </aside>
+<% end %>
+
+<%= render '/refinery/content_page' %>

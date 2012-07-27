@@ -1,0 +1,73 @@
+<% content_for :body_content_title do %>
+  <%= @event.title %>
+<% end %>
+
+<% content_for :body do %>
+  <section>
+    <h1>Title</h1>
+    <p>
+      <%=raw @event.title %>
+    </p>
+  </section>
+  <section>
+    <h1>Begin At</h1>
+    <p>
+      <%=raw @event.begin_at %>
+    </p>
+  </section>
+<!-- 
+
+   <section>
+    <h1>Select show</h1>
+    <p>
+      <%=raw @event.select_show %>
+    </p>
+  </section>
+   <section>
+    <h1>Event end</h1>
+    <p>
+      <%=raw @event.event_end %>
+    </p>
+  </section>
+ -->
+
+  <section>
+    <h1>Address</h1>
+    <p>
+      <%=raw @event.address %>
+    </p>
+  </section>
+  <section>
+    <h1>Category</h1>
+    <p>
+      <%=raw @event.category %>
+    </p>
+  </section>
+  <section>
+    <h1>Content</h1>
+    <p>
+      <%=raw @event.content %>
+    </p>
+  </section>
+  <section>
+    <h1>Photo</h1>
+    <p>
+      <%= image_fu @event.photo, nil %>
+    </p>
+  </section>
+<% end %>
+
+<% content_for :side_body do %>
+  <aside>
+    <h2><%= t('.other') %></h2>
+    <ul id="events">
+      <% @events.each do |event| %>
+        <li>
+          <%= link_to event.title, refinery.events_event_path(event) %>
+        </li>
+      <% end %>
+    </ul>
+  </aside>
+<% end %>
+
+<%= render '/refinery/content_page' %>

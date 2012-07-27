@@ -1,0 +1,30 @@
+es:
+  refinery:
+    plugins:
+      shares:
+        title: Shares
+#        article: masculino/femenino
+    shares:
+      admin:
+        shares:
+          actions:
+            create_new: Crear nuevo share
+            reorder: Reordenar shares
+            reorder_done: Reordenación de shares completada
+          records:
+            title: Shares
+            sorry_no_results: Lo siento, no hay resultados
+            no_items_yet: No hay shares todavía. Pulsa en "Crear nuevo Share" para crear tu primer share.
+          share:
+            view_live_html: Ver este share como abierto al público <br/><em>(abre en ventana nueva)</em>
+            edit: Editar este share
+            delete: Borrar este share para siempre
+      shares:
+        show:
+          other: Otros shares
+  activerecord:
+    attributes:
+      'refinery/shares/share':
+        people_name: People Name
+        time: Time
+        content: Content

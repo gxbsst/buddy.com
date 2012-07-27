@@ -1,0 +1,32 @@
+es:
+  refinery:
+    plugins:
+      interviews:
+        title: Interviews
+#        article: masculino/femenino
+    interviews:
+      admin:
+        interviews:
+          actions:
+            create_new: Crear nuevo interview
+            reorder: Reordenar interviews
+            reorder_done: Reordenación de interviews completada
+          records:
+            title: Interviews
+            sorry_no_results: Lo siento, no hay resultados
+            no_items_yet: No hay interviews todavía. Pulsa en "Crear nuevo Interview" para crear tu primer interview.
+          interview:
+            view_live_html: Ver este interview como abierto al público <br/><em>(abre en ventana nueva)</em>
+            edit: Editar este interview
+            delete: Borrar este interview para siempre
+      interviews:
+        show:
+          other: Otros interviews
+  activerecord:
+    attributes:
+      'refinery/interviews/interview':
+        people_name: People Name
+        title: Title
+        time: Time
+        content: Content
+        photo: Photo

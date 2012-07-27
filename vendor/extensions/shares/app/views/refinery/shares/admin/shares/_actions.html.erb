@@ -1,0 +1,25 @@
+<ul>
+  <% if ::Refinery::Shares::Admin::SharesController.searchable? %>
+    <li>
+      <%= render '/refinery/admin/search', :url => refinery.shares_admin_shares_path %>
+    </li>
+  <% end %>
+  <li>
+    <%= link_to t('.create_new'), refinery.new_shares_admin_share_path,
+                 :class => "add_icon" %>
+  </li>
+<% if !searching? && ::Refinery::Shares::Admin::SharesController.sortable? && ::Refinery::Shares::Share.any? %>
+  <li>
+    <%= link_to t('.reorder', :what => "Shares"),
+                 refinery.shares_admin_shares_path,
+                 :id => "reorder_action",
+                 :class => "reorder_icon" %>
+
+    <%= link_to t('.reorder_done', :what => "Shares"),
+                 refinery.shares_admin_shares_path,
+                 :id => "reorder_action_done",
+                 :style => "display: none;",
+                 :class => "reorder_icon" %>
+  </li>
+<% end %>
+</ul>

@@ -1,0 +1,31 @@
+nl:
+  refinery:
+    plugins:
+      interviews:
+        title: Interviews
+    interviews:
+      admin:
+        interviews:
+          actions:
+            create_new: Maak een nieuwe Interview
+            reorder: Wijzig de volgorde van de Interviews
+            reorder_done: Klaar met het wijzingen van de volgorde van de Interviews
+          records:
+            title: Interviews
+            sorry_no_results: Helaas! Er zijn geen resultaten gevonden.
+            no_items_yet: Er zijn nog geen Interviews. Druk op 'Maak een nieuwe Interview' om de eerste aan te maken.
+          interview:
+            view_live_html: Bekijk deze interview op de website <br/><em>(opent een nieuw venster)</em>
+            edit: Bewerk deze interview
+            delete: Verwijder deze interview voor eeuwig
+      interviews:
+        show:
+          other: Andere Interviews
+  activerecord:
+    attributes:
+      'refinery/interviews/interview':
+        people_name: People Name
+        title: Title
+        time: Time
+        content: Content
+        photo: Photo

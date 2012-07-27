@@ -1,0 +1,64 @@
+
+<div class="top">
+<div class="top_con">
+<div class="logo"><img src="images/logo.gif" width="102" height="111" /></div>
+<div class="menu">
+<ul class="m1">
+<li><a href="/homes">首 页</a></li>
+<li><a href="origin.html" >起 源</a></li>
+<li><a href="/events">活 动</a></li>
+<li><a href="particopate.html">参 与</a></li> 
+<li><a href="/shares">分 享</a></li>
+</ul>
+</div>
+</div>
+</div>
+
+<div class="content">
+<div class="prompt">
+  <div class="pro_con">您现在的位置：<a href="/homes">首页</a> > <span>分享</span></div></div>
+
+<div class="subpage_con">
+<div class="subc_top"></div>
+
+<div class="subc_center">
+<div class="sc_title4">分享——从心分享，一起见证改变的力量！</div>
+<div class="act_title">
+  <div class="at_left">专访讲述</div>
+</div>
+
+<ul class="share_list">
+
+<li>
+	<% @interviews.each do |interview| %>
+		<div class="shl_left"><%= image_fu(interview.photo, "140x150") %></div>
+		<div class="shl_right">
+		<div class="sr_title"><span class="srt_1"><a href="sharecontent.html"><%= interview.people_name %>、<%= interview.title %></a    ></span><span>时间：<%= interview.time %></span></div>
+		<div class="sr_con"><%= interview.content.html_safe %></div>
+		</div>
+	<% end %>
+
+</li>
+</ul>
+
+<div class="list_page">
+ <a href="＃">上一页</a>
+ <a href="＃" class="number">1</a>
+ <a href="＃" class="number">2</a>
+ <a href="＃" class="number">3</a>
+ <a href="＃" class="number">4</a>
+ <a href="＃" class="number">5</a>
+ <a href="＃">下一页</a>
+  
+  </div>
+</div>
+
+
+
+<div class="subc_bottom"></div>
+
+</div>
+
+</div>
+
+ 
