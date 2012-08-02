@@ -1,0 +1,30 @@
+zh-CN:
+  refinery:
+    plugins:
+      shares:
+        title: 分享感言
+    shares:
+      admin:
+        shares:
+          actions:
+            create_new: 添加分享
+            reorder: 分享排序
+            reorder_done: 完成排序
+          records:
+            title: 分享
+            sorry_no_results: Sorry! There are no results found.
+            no_items_yet: There are no Shares yet. Click "Add New share" to add your first share.
+          share:
+            view_live_html: View this share live <br/><em>(opens in a new window)</em>
+            edit: 编辑分享
+            delete: 删除分享
+      shares:
+        show:
+          other: 其他分享
+  activerecord:
+    attributes:
+      'refinery/shares/share':
+        people_name: 分享人
+        time: 分享时间
+        content: 内容
+        photo: 图片

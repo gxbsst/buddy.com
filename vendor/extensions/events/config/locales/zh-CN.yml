@@ -1,0 +1,34 @@
+zh-CN:
+  refinery:
+    plugins:
+      events:
+        title: 活动
+    events:
+      admin:
+        events:
+          actions:
+            create_new: 添加活动
+            reorder: 活动排序
+            reorder_done: 完成排序
+          records:
+            title: 活动
+            sorry_no_results: Sorry! There are no results found.
+            no_items_yet: There are no Infos yet. Click "Add New Event" to add your first event.
+          event:
+            view_live_html: View this event live <br/><em>(opens in a new window)</em>
+            edit: 编辑活动
+            delete: 删除活动
+      events:
+        show:
+          other: 其他活动
+  activerecord:
+    attributes:
+      'refinery/events/event':
+        title: 标题
+        address: 地址
+        category: 活动类别
+        content: 内容
+        photo: 图片
+        created_at: 创建时间
+        select_show: 选择活动展示
+        event_end:  活动结束

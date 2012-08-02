@@ -1,0 +1,30 @@
+<div class="prompt">
+	<div class="pro_con">您现在的位置：<a href="/homes">首页</a> ><span>分享</span></div></div>
+
+	<div class="subpage_con">
+		<div class="subc_top"></div>
+
+		<div class="subc_center">
+			<div class="sc_title4">分享——从心分享，一起见证改变的力量！</div>
+
+			<div class="scon_title">
+				<span class="sct_left"><%= @interview.people_name %>、<%= @interview.title %></span><span>时间：<%= @interview.time %></span>
+			</div>
+			<div class="scon_con">
+				<p class="scc_img"><%= image_fu(@interview.photo, "650x350px") %></p>
+				<p><%= @interview.content.html_safe %></p>
+
+				<p class="line2"></p>
+
+				<p class="scc_btn">
+					<%= link_to '/interviews' do  %>
+					<img src="/images/sc_pic2.gif" width="155" height="40" border="0" />
+				   <% end %>
+				</p>
+			</div>
+
+		</div>
+
+		<div class="subc_bottom"></div>
+
+	</div>

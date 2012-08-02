@@ -1,5 +1,5 @@
 # encoding: utf-8
-class ShareController < ApplicationController
+class SharesController < ApplicationController
 
    
   def index

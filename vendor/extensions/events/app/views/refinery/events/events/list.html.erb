@@ -1,0 +1,39 @@
+<div class="prompt">
+	<div class="pro_con">您现在的位置：<a href="/homes">首页</a> ><span>活动</span></div></div>
+
+	<div class="subpage_con">
+		<div class="subc_top"></div>
+
+		<div class="subc_center">
+			<div class="sc_title2">活动——我们努力让每一次活动都发挥最大的效能。</div>
+			<div class="act_title">
+				<div class="at_left">精彩回顾</div>
+			</div>
+         
+        <% @events.each do |event| %>
+			<ul class="share_list">
+				<li>
+					<div class="atl_left">
+						<%= link_to "/events/#{event.id}"  do %>
+						<%= image_fu(event.photo, "150x110px") %>
+						<% end %>
+					</div>
+
+					<div class="shl_right">
+						<div class="sr_title">
+							<span class="srt_1">
+								<%= link_to event.title, "/events/#{event.id}" %>
+							</span>
+							<span>时间：<%= event.begin_at %> </span>
+						</div>
+						<div class="sr_con2"><%= raw  truncate(event.content,:length => 20,:omission => '...') %>
+						</div>
+					</div>
+				</li>
+			</ul>
+      <% end %>
+      
+			<div class="list_page">
+                <%= will_paginate @events, :previous_label => '上一页', :next_label => '下一页' %>  
+			</div>
+		</div>

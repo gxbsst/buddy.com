@@ -1,5 +1,5 @@
 # encoding: utf-8
-class InterviewController < ApplicationController
+class InterviewsController < ApplicationController
  
   def index
  

@@ -1,0 +1,36 @@
+ 
+       		<div class="at_right"> 
+				<!-- JiaThis Button BEGIN -->
+				<div id="share_first">
+				<div id="ckepop"><span class="jiathis_txt">分享到：</span>
+					<a class="jiathis_button_qzone"></a>
+					<a class="jiathis_button_tsina"></a>
+					<a class="jiathis_button_tqq"></a>
+					<a class="jiathis_button_renren"></a>
+					<a class="jiathis_button_kaixin001"></a>
+					<a href="http://www.jiathis.com/share" class="jiathis jiathis_txt jiathis_separator jtico jtico_jiathis" target="_blank"></a>
+					<a class="jiathis_counter_style"></a>
+				</div>
+				</div>
+			</div>
+         <script type="text/javascript" >
+         	$("#share_first").mouseover(function(){
+            setShare("<%= @event.title %>", "<%= strip_tags(@event.content)  %>");
+        });
+            
+			// var jiathis_config = {
+			// 	boldNum:0,
+			// 	siteNum:7,
+			// 	showClose:false,
+			// 	imageUrl:"http://v2.jiathis.com/code/images/r5.gif",
+			// 	imageWidth:26,
+			// 	marginTop:150,
+			//     // url:"http://www.jiathis.com",
+			//     title:"<%= @event.title %>",
+			//     summary:"<%= strip_tags(@event.content) %>"
+			// }
+			</script>
+ 
+			<!-- JiaThis Button END -->
+ 
+ 

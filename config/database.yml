@@ -8,9 +8,12 @@ development:
   username: root
   password: ""
   host: localhost
-#  socket:  /opt/local/var/run/mysql5/mysqld.sock
   sockket: /tmp/mysql.sock
+ #socket: /var/lib/mysql/mysql.sock
 
+
+
+ 
 production:
   adapter: mysql2
   encoding: utf8

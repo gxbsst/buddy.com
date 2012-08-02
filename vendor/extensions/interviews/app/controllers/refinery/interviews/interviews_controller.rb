@@ -22,7 +22,9 @@ module Refinery
     protected
 
       def find_all_interviews
-        @interviews = Interview.order('position ASC')
+        # @interviews = Interview.order('position ASC')
+        params[:page] ||= 1
+        @interviews = Interview.paginate(:page => params[:page], :per_page => 1)
       end
 
       def find_page

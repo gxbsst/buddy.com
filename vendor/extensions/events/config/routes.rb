@@ -2,8 +2,15 @@ Refinery::Core::Engine.routes.append do
 
   # Frontend routes
   namespace :events do
-    resources :events, :path => '', :only => [:index, :show]
+    resources :events, :path => ''do
+      collection  do
+       get "list", :as => 'list_events'
+      end
+    end
+
   end
+
+
 
   # Admin routes
   namespace :events, :path => '' do

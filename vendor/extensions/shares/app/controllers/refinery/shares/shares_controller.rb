@@ -4,11 +4,9 @@ module Refinery
 
       before_filter :find_all_shares
       before_filter :find_page
-
       def index
         # you can use meta fields from your model instead (e.g. browser_title)
         # by swapping @page for @share in the line below:
-        @interviews = Refinery::Interviews::Interview.all
         present(@page)
       end
 
@@ -24,6 +22,7 @@ module Refinery
 
       def find_all_shares
         @shares = Share.order('position ASC')
+        @interviews = Refinery::Interviews::Interview.order('position DESC').limit(1)
       end
 
       def find_page

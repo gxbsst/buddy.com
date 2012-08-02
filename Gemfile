@@ -15,6 +15,7 @@ gem 'mysql2'
 
 group :development, :test do
   gem 'sqlite3'
+  gem 'sextant' #通过 http://localhost:3000/rails/routes 查看routes 
 end
 
 

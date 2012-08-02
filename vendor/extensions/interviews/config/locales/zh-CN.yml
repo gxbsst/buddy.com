@@ -1,0 +1,32 @@
+zh-CN:
+  refinery:
+    plugins:
+      interviews:
+        title: 专访
+    interviews:
+      admin:
+        interviews:
+          actions:
+            create_new: 添加专访
+            reorder: 专访排序
+            reorder_done: 完成排序
+          records:
+            title: 专访
+            sorry_no_results: Sorry! There are no results found.
+            no_items_yet: There are no Interviews yet. Click "Add New interview" to add your first interview.
+          interview:
+            view_live_html: View this interview live <br/><em>(opens in a new window)</em>
+            edit: 编辑专访
+            delete: 删除专访
+      interviews:
+        show:
+          other: 其他专访
+  activerecord:
+    attributes:
+      'refinery/interviews/interview':
+        people_name: 专访人物名称
+        title: 专访主题
+        time: 专访时间
+        content: 内容
+        photo: 图片
+        created_at: 创建时间

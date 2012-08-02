@@ -1,19 +1,4 @@
 
-<div class="top">
-<div class="top_con">
-<div class="logo"><img src="images/logo.gif" width="102" height="111" /></div>
-<div class="menu">
-<ul class="m1">
-<li><a href="/homes">首 页</a></li>
-<li><a href="origin.html">起 源</a></li>
-<li><a href="/events">活 动</a></li>
-<li><a href="particopate.html">参 与</a></li> 
-<li><a href="/shares">分 享</a></li>
-</ul>
-</div>
-</div>
-</div>
-
 <div class="banner_bg">
 <div class="banner">
 <ul class="banner_left">
@@ -55,35 +40,33 @@
 <div class="con_bottom">
 <div class="cb_left">
 <div class="clb_title">活动预告</div>
-<dl class="clb_con">
-
 	<% @events.each do |event| %>
-        <dt><%= image_fu(event.photo, "310x220") %></dt>
+      <dl class="clb_con">
+        <dt><%= image_fu(event.photo, "260x150px") %></dt>
         <dd class="cc_1"><%= event.title %></dd>
 		<dd class="cc_2">时间：<%= event.begin_at %></dd>
 		<dd class="cc_2">地点：<%= event.address %></dd>
 		<dd class="cc_2">类别：<%= event.category %></dd>
-		<dd class="cc_2">内容：<%= event.content.html_safe %>⋯⋯<a href="/events">［查看详情］</a></dd>
+     	<dd class="cc_2">内容：<%= event.content.truncate(20).html_safe %><a href="/events">［查看详情］</a></dd>  
+      </dl>
 	<% end %>
-	
-</dl>
+
 
 </div>
 <div class="cb_line"></div>
-
 <div class="cb_right">
 <div class="cbr_title">分享感言</div>
-<ul class="cbr_bottom">
-<li>
-<span>留言参与老友计划中老友乐相伴活动</span>
-<span>2012-2-1</span>
-</li>
-<li>
-<span>留言参与老友计划中老友乐相伴活动</span>
-<span>2012-2-1</span>
-</li>
-</ul>
-</div>
-</div>
+
+<% @shares.each do |share| %>
+  <ul class="cbr_bottom">
+     <li>
+		 <%= share.content.html_safe %> 
+		 <%= share.time %> 
+     </li>
+  </ul>
+ <% end %>
 </div>
  
+</div>
+</div>
+

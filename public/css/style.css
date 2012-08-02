@@ -116,7 +116,7 @@ ul.act_review li{ display:block; float:left; width:198px; margin-right:27px;}
 ul.act_review li span{ display:block;}
 span.ar_img{  padding:3px; border:1px solid #ddd;}
 span.ar_title{ line-height:40px; font-size:14px;}
-span.ar_share{ height:18px; background:url(../images/act_pic11.gif) no-repeat 0px 0px; padding-left:25px;}
+/*span.ar_share{ height:18px; padding-left:25px;}*/
 
 /*参与*/
 .sc_title3{ background:url(../images/par_pic1.gif) no-repeat; height:50px; font-size:0px; text-align:-10000px; margin-bottom:25px;}
