@@ -1,3 +1,20 @@
+<div class="top">
+    <div class="top_con">
+      <div class="logo"><img src="/images/logo.gif" width="102" height="111" /></div>
+      <div class="menu">
+        <ul class="m1">
+          <li><a href="/homes" >首 页</a></li>
+          <li><a href="/origin.html" >起 源</a></li>
+           <li><a href="/events"  class="current">活 动</a></li>  
+          <li><a href="/particopate.html">参 与</a></li> 
+          <li><a href="/shares" >分 享</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+ 
+
+<div class="content">
 <div class="prompt"><div class="pro_con">您现在的位置：<a href="/homes">首页</a> > <span>活动</span></div></div>
 <div class="subpage_con">
 	<div class="subc_top"></div>
@@ -5,9 +22,9 @@
 		<div class="sc_title2">活动——我们努力让每一次活动都发挥最大的效能。</div>
 		<div class="act_title">
 			<div class="at_left">活动预告</div>
- 
 			<%= render "share_to_sns/sns_event" %>  
 		</div>
+ 
 		<div class="scc_top">
 			<div class="act_img"><%= image_fu(@event.photo, "310x220px") %></div>
 			<dl class="act_text">
@@ -22,6 +39,8 @@
 				<dd class="att_btn"><a href="particopate.html"><img src="images/act_pic5.gif" width="142" height="39" border="0" /></a></dd>
 			</dl>
 		</div>
+ 
+
 		<div class="line"></div>
 		<div class="act_title">
 			<div class="at_left">精彩回顾</div>

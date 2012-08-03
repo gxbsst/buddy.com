@@ -1,4 +1,19 @@
+<div class="top">
+    <div class="top_con">
+      <div class="logo"><img src="/images/logo.gif" width="102" height="111" /></div>
+      <div class="menu">
+        <ul class="m1">
+          <li><a href="/homes" >首 页</a></li>
+          <li><a href="/origin.html" >起 源</a></li>
+           <li><a href="/events" >活 动</a></li>  
+          <li><a href="/particopate.html">参 与</a></li> 
+          <li><a href="/shares"  class="current">分 享</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
  
+<div class="content"> 
 <div class="prompt">
 	<div class="pro_con">您现在的位置：<a href="/homes">首页</a> > <span>分享</span></div></div>
 
@@ -13,12 +28,12 @@
 
 
 			<ul class="reflections_list">
+				<% @shares.each do |share| %>
 				<li>
-					<% @shares.each do |share| %>
 					<div class="sl_title"><span class="slt_1"><%= share.people_name %></span><span>说</span><span class="slt_2">时间：<%= share.time %></span></div>
-					<div class="sl_con"><span class="slc_1"><img src="images/share_pic3.gif" width="70" height="70" /></span><span class="slc_2"><%= share.content.html_safe %></span></div>
-					<% end %>
+					<div class="sl_con"><span class="slc_1"><img src="images/share_pic3.gif" width="70" height="70" /></span><span class="slc_2"><%= share.content.html_safe %></span></div>					
 				</li>
+				<% end %>
 			</ul>
 
 
