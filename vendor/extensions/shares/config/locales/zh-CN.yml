@@ -25,6 +25,7 @@ zh-CN:
     attributes:
       'refinery/shares/share':
         people_name: 分享人
-        time: 分享时间
+        time: 时间
         content: 内容
         photo: 图片
+        select_show: 分享感言展示在首页

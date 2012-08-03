@@ -116,7 +116,7 @@ ul.act_review li{ display:block; float:left; width:198px; margin-right:27px;}
 ul.act_review li span{ display:block;}
 span.ar_img{  padding:3px; border:1px solid #ddd;}
 span.ar_title{ line-height:40px; font-size:14px;}
-/*span.ar_share{ height:18px; padding-left:25px;}*/
+span.ar_share{ height:18px; padding-left:25px;}
 
 /*参与*/
 .sc_title3{ background:url(../images/par_pic1.gif) no-repeat; height:50px; font-size:0px; text-align:-10000px; margin-bottom:25px;}
@@ -153,8 +153,8 @@ ul.share_list li{ display:block; border-bottom:1px dashed #ddd; margin-bottom:30
 .shl_left{ float:left; width:130px; height:120px; border:1px solid #ddd; padding:4px; margin-right:25px;}
 .shl_right{ float:left; width:650px;}
 .sr_title{ overflow:hidden; margin-bottom:15px; margin-top:5px;}
-.sr_title span{ display:block; float:left; line-height:22px;}
-span.srt_1{margin-right:20px;}
+.sr_title span{ display:block; float:left; line-height:22px;margin-right:20px;}
+span.srt_1{}
 span.srt_1 a{font-size:14px; font-weight:bold;  color:#8b603d;}
 .sr_con{ line-height:28px;}
 .list_page{ width:280px; margin:0px auto; margin-bottom:20px; overflow:hidden;}
@@ -170,6 +170,26 @@ span.srt_1 a{font-size:14px; font-weight:bold;  color:#8b603d;}
 p.scc_img{ text-align:center; margin-bottom:40px; margin-top:30px;}
 p.line2{ border-bottom:1px dashed #ddd; margin-top:50px; height:1px; overflow:hidden;}
 p.scc_btn{ text-align:center;}
+
+
+.atl_left{ float:left; width:150px; height:110px; border:1px solid #ddd; padding:4px; margin-right:25px;}
+.sr_con2{ line-height:24px;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

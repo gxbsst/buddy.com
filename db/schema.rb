@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20120727033446) do
+ActiveRecord::Schema.define(:version => 20120803022308) do
 
   create_table "refinery_events", :force => true do |t|
     t.string   "title"
@@ -142,6 +142,7 @@ ActiveRecord::Schema.define(:version => 20120727033446) do
     t.datetime "created_at",  :null => false
     t.datetime "updated_at",  :null => false
     t.integer  "photo_id"
+    t.boolean  "select_show"
   end
 
   create_table "refinery_user_plugins", :force => true do |t|

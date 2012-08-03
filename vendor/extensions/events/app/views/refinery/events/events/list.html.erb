@@ -25,6 +25,8 @@
 								<%= link_to event.title, "/events/#{event.id}" %>
 							</span>
 							<span>时间：<%= event.begin_at %> </span>
+							<span>地点：<%= event.address %>  </span>
+							<span>类别：<%= event.category %></span> 
 						</div>
 						<div class="sr_con2"><%= raw  truncate(event.content,:length => 20,:omission => '...') %>
 						</div>

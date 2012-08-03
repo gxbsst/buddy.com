@@ -45,7 +45,12 @@
                :toggle_image_display => false %>
 
   </div>
+   
+  <div class='field'>
+    <%= f.label :select_show -%>
+    <%= f.check_box :select_show  -%>
 
+  </div>
 
   <%= render '/refinery/admin/form_actions', :f => f,
              :continue_editing => false,

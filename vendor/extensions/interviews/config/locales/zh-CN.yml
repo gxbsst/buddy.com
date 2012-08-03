@@ -24,9 +24,9 @@ zh-CN:
   activerecord:
     attributes:
       'refinery/interviews/interview':
-        people_name: 专访人物名称
+        people_name: 专访人物
         title: 专访主题
         time: 专访时间
-        content: 内容
+        content: 专访内容
         photo: 图片
         created_at: 创建时间

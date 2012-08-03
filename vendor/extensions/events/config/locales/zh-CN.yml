@@ -24,11 +24,12 @@ zh-CN:
   activerecord:
     attributes:
       'refinery/events/event':
-        title: 标题
-        address: 地址
+        title: 活动标题
+        begin_at: 活动日期
+        address: 活动地址
         category: 活动类别
-        content: 内容
-        photo: 图片
+        content: 活动内容
+        photo: 活动图片
         created_at: 创建时间
         select_show: 选择活动展示
         event_end:  活动结束

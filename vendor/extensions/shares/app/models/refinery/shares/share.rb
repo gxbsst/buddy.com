@@ -3,7 +3,7 @@ module Refinery
     class Share < Refinery::Core::BaseModel
       self.table_name = 'refinery_shares'
 
-      attr_accessible :people_name, :time, :content, :position, :photo_id
+      attr_accessible :people_name, :time, :content, :position, :photo_id, :select_show
 
       acts_as_indexed :fields => [:people_name, :content]
 

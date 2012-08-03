@@ -59,8 +59,8 @@
 
 <% @shares.each do |share| %>
   <ul class="cbr_bottom">
-     <li>
-		 <%= share.content.html_safe %> 
+     <li>	
+     <%= raw truncate(share.content,:length => 28,:omission => '...') %>
 		 <%= share.time %> 
      </li>
   </ul>
